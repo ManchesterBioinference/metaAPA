@@ -16,8 +16,9 @@ The main pipeline is divided into two parts:
 
 
 Besides, we provided two workflow to get the input:
-	+ apatools.nf: run Sierra, polyApipe, and SCAPE tools
-	+ preprocess.nf: include site annotation, expression normalization and conversion from count matrix to bed format
+
++ apatools.nf: run Sierra, polyApipe, and SCAPE tools
++ preprocess.nf: include site annotation, expression normalization and conversion from count matrix to bed format
 
 ## Requirments
 
