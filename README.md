@@ -1,7 +1,6 @@
 # metaAPA
 
 We designed two strategies to integrate the outputs of these tools, enabling researchers to select appropriate polyA site sets based on their specific needs.
-
 ## Overview
 
 The main pipeline is divided into two parts:
@@ -14,23 +13,25 @@ The main pipeline is divided into two parts:
 
 ![similarity-based method](figures/Figure1B_v3.png)
 
-
-Besides, we provided two workflow to get the input:
-
-+ apatools.nf: run Sierra, polyApipe, and SCAPE tools
-+ preprocess.nf: include site annotation, expression normalization and conversion from count matrix to bed format
+## Updates
 
 ## Requirments
 
 1. Install Nextflow (version 23.04.3.5875)
-2. Create conda environment
+2. Create conda environment (yaml in the conda_env folder)
 
 ## Directory structure
-This pipeline consists of two directories: 
+This pipeline consists of three directories: 
 
-+ bin: R scripts 
-+ modules: Nextflow processes 
-		
++ **bin**: R scripts 
++ **modules**: Nextflow processes 
++ **conda_env**: conda environment
+
+ 
+The main.nf is the pipeline to integrate polyA sites. Besides, we provided two workflows to get the input:
++ **apatools.nf**: run Sierra, polyApipe, and SCAPE tools
++ **preprocess.nf**: include site annotation, expression normalization and conversion from count matrix to bed format
+	
 ## Usage
 Before running the integration pipeline, users need to run apatools.nf and preprocess.nf to get the input.
 
